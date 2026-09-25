@@ -4,6 +4,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Document</title>
 </head>
 <body class="text-white"> 
@@ -15,10 +16,49 @@
         <div class="w-1/2 h-full flex items-center justify-center">
             <div class="w-[80%] h-auto min-h-[400px] bg-[#262626] py-[30px] px-[20px] rounded-md">
                 <h1 class="text-[40px] font-bold">Calculadora-IMC</h1>
+                <div class="w-[23%] h-[2px] bg-[#17A34A] rounded-md"></div>
 
-            </div>
+                <label for="" class="mt-[20px] text-[18px] font-bold block mb-[10px]">Peso em Kg</label>
+                <div class="w-full h-[60px] bg-[#3F3F47] relative">
+                    <input type="number" name="" id="peso" 
+                    class="w-full h-full bg-transparent border-none outline-none pl-[40px] pr-[40px]">
+                    <i class="fa-solid fa-weight-hanging absolute left-2 top-1/2 -translate-y-1/2 text-[20px]"></i>
+                    <p class="absolute right-2 top-1/2 - -translate-y-1/2">Kg</p> 
+
+                </div>
+                <label for="" class="mt-[20px] text-[18px] font-bold block mb-[10px]">Altura em metros</label>
+                <div class="w-full h-[60px] bg-[#3F3F47] flex">
+                    <div class=" w-[7%] h-full flex items-center
+                         justify-center bg-500">
+                         <i class="fa-solid fa-ruler"></i>
+                    </div>
+                    <input type="number" name="" id="altura" class="w-[86%] h-full bg-transparent border-none outline-none">
+                    <div class="w-[6%] h-full flex items-center justify-center">m
+                    </div>
+                </div>
+                <button id="botao" class="w-full h-[60px] bg-[#17A34A] text-[20px] font-bold cursor-pointer mt-[30px] rounded-md text-white">
+                    Calcular 
+                </button>
+
+                <div class="w-full h-[1px] bg-[#3F3F47] my-[20px]"></div>
+
+                <div class="w-full flex h-[150px]">
+                    <div class="w-[20%] h-full flex items-center justify-center flex-col">
+                        <p class="text-[30px] text-[#17A34A] font-[400]">20.81</p>  
+                        <p>Seu IMC</p>
+                    </div>
+                    <div class="w-[80%] h-full flex items-center justify-center text-center">
+                        <p>Você está no peso ideal!</p>
+                    </div>
+                    
+                </div> 
+                
+                <div class="w-full h-[1px] bg-[#3F3F47] my-[20px]"></div>
+
+            </div> 
 
         </div>
     </div>
+    <Script src="./script.js"></Script>
 </body>
 </html>
